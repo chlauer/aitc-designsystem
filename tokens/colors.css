@@ -1,0 +1,46 @@
+:root{
+/* --- Brand teal: sampled from the LinkedIn logo (#0097b2) --- */
+--teal-50:#e8f6f9;--teal-100:#c6eaf1;--teal-200:#93d8e5;--teal-300:#55bfd3;
+--teal-400:#1fa8c1;--teal-500:#0097b2;--teal-600:#007d95;--teal-700:#016376;
+--teal-800:#054b5a;--teal-900:#07333d;
+/* --- Deep navy: the dark counterpart, used for ink and dark surfaces --- */
+--navy-950:#04161f;--navy-900:#06202d;--navy-800:#0b2c3d;--navy-700:#123c51;--navy-600:#1b5069;
+/* --- Warm sand: long-form reading surfaces and quiet accents --- */
+--sand-50:#fbf8f3;--sand-100:#f5ede1;--sand-200:#eadfcc;--sand-300:#dccbb0;--sand-400:#c6af8c;--sand-500:#a8905f;
+/* --- Cool neutrals, tuned slightly toward the navy --- */
+--gray-0:#ffffff;--gray-50:#f7f8f9;--gray-100:#eef0f2;--gray-200:#dde1e4;--gray-300:#c2c9cd;
+--gray-400:#98a2a8;--gray-500:#717c83;--gray-600:#535e65;--gray-700:#3a4449;--gray-800:#252d31;--gray-900:#151a1d;
+/* --- Semantic hues --- */
+--green-500:#1f8a5b;--green-100:#dcf0e6;
+--amber-500:#b8761a;--amber-100:#f8ecd8;
+--red-500:#b8382c;--red-100:#f8e3e0;
+
+/* ================= Semantic aliases (light, the default) ================= */
+--text-1:var(--navy-900);--text-2:var(--gray-600);--text-3:var(--gray-500);
+--text-brand:var(--teal-700);--text-invert:#ffffff;--text-on-brand:#ffffff;--text-link:var(--teal-700);
+--surface-page:var(--gray-0);--surface-card:var(--gray-0);--surface-raised:var(--gray-50);
+--surface-sunken:var(--gray-100);--surface-sand:var(--sand-100);--surface-sand-deep:var(--sand-200);
+--surface-brand:var(--teal-500);--surface-brand-soft:var(--teal-50);--surface-ink:var(--navy-900);
+--border-1:var(--gray-200);--border-2:var(--gray-300);--border-strong:var(--navy-900);--border-brand:var(--teal-500);
+--focus-ring:var(--teal-400);
+--fill-hover:rgba(6,32,45,.05);--fill-press:rgba(6,32,45,.1);
+--overlay-scrim:rgba(4,22,31,.55);
+--success:var(--green-500);--success-soft:var(--green-100);
+--warning:var(--amber-500);--warning-soft:var(--amber-100);
+--danger:var(--red-500);--danger-soft:var(--red-100);
+}
+
+[data-theme="dark"]{
+--text-1:#eef4f6;--text-2:#a8b8c0;--text-3:#7f9099;
+--text-brand:var(--teal-300);--text-invert:var(--navy-950);--text-on-brand:#ffffff;--text-link:var(--teal-300);
+--surface-page:var(--navy-950);--surface-card:var(--navy-900);--surface-raised:var(--navy-800);
+--surface-sunken:#020e14;--surface-sand:var(--navy-800);--surface-sand-deep:var(--navy-700);
+--surface-brand:var(--teal-500);--surface-brand-soft:rgba(0,151,178,.16);--surface-ink:#020e14;
+--border-1:rgba(255,255,255,.12);--border-2:rgba(255,255,255,.22);--border-strong:#eef4f6;--border-brand:var(--teal-400);
+--focus-ring:var(--teal-300);
+--fill-hover:rgba(255,255,255,.07);--fill-press:rgba(255,255,255,.13);
+--overlay-scrim:rgba(2,14,20,.7);
+--success:#3fae7c;--success-soft:rgba(63,174,124,.16);
+--warning:#d9982f;--warning-soft:rgba(217,152,47,.16);
+--danger:#d9584a;--danger-soft:rgba(217,88,74,.16);
+}

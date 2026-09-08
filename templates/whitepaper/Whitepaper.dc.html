@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Whitepaper" description="Druckfertiges Fließdokument im AITC-Look: Titelblock, Kolumnentitel, Kennzahlenblöcke, Zitate, Quellen." -->
+<helmet><script src="./ds-base.js"></script><script src="./doc-page.js"></script><style>doc-page:not(:defined){visibility:hidden}</style></helmet>
+<doc-page margin="0.9in">
+<div slot="header" style="display:flex;align-items:center;justify-content:space-between;padding-bottom:8px;border-bottom:1px solid #dde1e4;font-family:'IBM Plex Mono',monospace;font-size:8pt;letter-spacing:.12em;text-transform:uppercase;color:#717c83">
+<span>AI Transformation Collective</span><span>Whitepaper · März 2026</span>
+</div>
+<div slot="footer" style="display:flex;align-items:center;justify-content:space-between;padding-top:8px;border-top:1px solid #dde1e4;font-family:'IBM Plex Mono',monospace;font-size:8pt;letter-spacing:.12em;text-transform:uppercase;color:#717c83">
+<span>ai-transformation-collective.de</span><span>Seite</span>
+</div>
+<div style="background:#0097b2;color:#fff;margin:-0.9in -0.9in 36pt;padding:54pt 0.9in 42pt;position:relative;overflow:hidden">
+<img src="../../assets/motif-dots-white.png" alt="" style="position:absolute;right:-90pt;top:-120pt;width:400pt;opacity:.24">
+<div style="position:relative;display:flex;align-items:center;gap:10pt;font-family:'IBM Plex Mono',monospace;font-size:8pt;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.82)"><span style="width:22pt;height:1.5pt;background:currentColor;display:block"></span>Whitepaper 03/2026</div>
+<h1 style="font-family:'Oswald',sans-serif;font-weight:500;font-size:40pt;line-height:.98;letter-spacing:-.01em;text-transform:uppercase;margin:16pt 0 14pt;max-width:22ch">Warum KI-Pilotprojekte den Betrieb nie erreichen</h1>
+<p style="font-family:'Archivo',Arial,sans-serif;font-size:13pt;line-height:1.35;color:rgba(255,255,255,.9);margin:0;max-width:52ch">Eine Auswertung von 34 Vorhaben aus dem deutschsprachigen Mittelstand.</p>
+<div style="position:relative;display:flex;align-items:flex-end;justify-content:space-between;margin-top:34pt">
+<span style="font-family:'Archivo',Arial,sans-serif;font-size:10pt;color:rgba(255,255,255,.85)">Dr. Anna Weiß, Tobias Krenz<br>AI Transformation Collective</span>
+<span style="display:flex;flex-direction:column;line-height:1;font-family:'Oswald',sans-serif;text-transform:uppercase;color:#fff"><span style="font-size:22pt;font-weight:700;letter-spacing:-.01em">AI</span><span style="font-size:8pt;font-weight:400;letter-spacing:.2em;margin-top:3pt">Transformation Collective</span></span>
+</div>
+</div>
+<div style="font-family:'Archivo',Arial,sans-serif;font-size:10.5pt;line-height:1.6;color:#06202d">
+<div style="border-left:3pt solid #0097b2;background:#f5ede1;padding:16pt 18pt;margin:0 0 24pt">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:8pt;letter-spacing:.14em;text-transform:uppercase;color:#007d95;margin-bottom:8pt">Das Wichtigste in drei Sätzen</div>
+<p style="margin:0">In 21 von 34 untersuchten Vorhaben war beim Übergang in den Betrieb niemand benannt, der laufende Kosten, Modellpflege und fachliche Verantwortung trägt. Die Modellqualität war in keinem der abgebrochenen Fälle der ausschlaggebende Grund. Wer vier Rollen vor dem ersten Sprint namentlich besetzt, erreicht eine Betriebsquote von 71 statt 38 Prozent.</p>
+</div>
+<h2 style="font-family:'Oswald',sans-serif;font-weight:500;font-size:19pt;line-height:1.1;text-transform:uppercase;letter-spacing:-.005em;margin:26pt 0 10pt;color:#06202d">Der Übergang ist die Projektphase, die niemand plant</h2>
+<p style="margin:0 0 10pt">Projektpläne enden mit dem Abnahmetermin. Was danach kommt — Monitoring, Nachtraining, Eskalationswege — steht in keinem Angebot, weil es keine Projektleistung ist, sondern Linienarbeit. Genau dort bricht die Kette: Das Modell läuft, aber niemand hat die Aufgabe, montags draufzuschauen.</p>
+<p style="margin:0 0 10pt">Wir haben 34 Vorhaben aus 19 Organisationen ausgewertet, alle zwischen 2023 und 2025 begonnen, alle mit einem technisch abgenommenen Pilot. 13 gingen in den Regelbetrieb, 21 nicht. Der Unterschied lag nicht in Budget, Branche oder Modellart.</p>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:18pt;margin:22pt 0;break-inside:avoid">
+<div style="border-top:3pt solid #0097b2;padding-top:10pt"><div style="font-family:'Oswald',sans-serif;font-weight:600;font-size:34pt;line-height:.9;display:flex;align-items:baseline;gap:2pt">21<span style="font-size:15pt;color:#007d95">/34</span></div><div style="font-size:9pt;line-height:1.35;color:#535e65;margin-top:6pt">ohne benannte Betriebsverantwortung</div></div>
+<div style="border-top:3pt solid #0097b2;padding-top:10pt"><div style="font-family:'Oswald',sans-serif;font-weight:600;font-size:34pt;line-height:.9;display:flex;align-items:baseline;gap:2pt">7<span style="font-size:15pt;color:#007d95">Mon.</span></div><div style="font-size:9pt;line-height:1.35;color:#535e65;margin-top:6pt">Median bis zum Abbruch nach Abnahme</div></div>
+<div style="border-top:3pt solid #0097b2;padding-top:10pt"><div style="font-family:'Oswald',sans-serif;font-weight:600;font-size:34pt;line-height:.9;display:flex;align-items:baseline;gap:2pt">71<span style="font-size:15pt;color:#007d95">%</span></div><div style="font-size:9pt;line-height:1.35;color:#535e65;margin-top:6pt">Betriebsquote bei vorab besetzten Rollen</div></div>
+</div>
+<blockquote style="font-family:'Oswald',sans-serif;font-weight:300;font-size:22pt;line-height:1.15;letter-spacing:-.005em;margin:26pt 0;padding:18pt 0;border-top:3pt solid #0097b2;border-bottom:1px solid #dde1e4;break-inside:avoid">„Die Frage ist nicht, ob das Modell gut ist. Die Frage ist, wer montags um neun draufschaut.“</blockquote>
+<h2 style="font-family:'Oswald',sans-serif;font-weight:500;font-size:19pt;line-height:1.1;text-transform:uppercase;letter-spacing:-.005em;margin:26pt 0 10pt;color:#06202d">Vier Rollen, die vor dem Start feststehen müssen</h2>
+<p style="margin:0 0 12pt">Die Besetzung kostet keine zusätzliche Kapazität, sondern eine Entscheidung. In allen 13 erfolgreichen Fällen waren diese vier Rollen vor dem ersten Sprint mit Namen belegt.</p>
+<table style="width:100%;border-collapse:collapse;font-size:9.5pt;margin:0 0 20pt">
+<thead><tr style="text-align:left"><th style="font-family:'IBM Plex Mono',monospace;font-size:8pt;letter-spacing:.12em;text-transform:uppercase;color:#717c83;font-weight:400;padding:0 8pt 6pt 0;border-bottom:1px solid #c2c9cd">Rolle</th><th style="font-family:'IBM Plex Mono',monospace;font-size:8pt;letter-spacing:.12em;text-transform:uppercase;color:#717c83;font-weight:400;padding:0 8pt 6pt 0;border-bottom:1px solid #c2c9cd">Entscheidet über</th><th style="font-family:'IBM Plex Mono',monospace;font-size:8pt;letter-spacing:.12em;text-transform:uppercase;color:#717c83;font-weight:400;padding:0 0 6pt;border-bottom:1px solid #c2c9cd">Typische Besetzung</th></tr></thead>
+<tbody>
+<tr><td style="padding:9pt 8pt 9pt 0;border-bottom:1px solid #eef0f2;font-weight:600">Fachliche Verantwortung</td><td style="padding:9pt 8pt 9pt 0;border-bottom:1px solid #eef0f2;color:#535e65">Was das Modell darf und wofür es genutzt wird</td><td style="padding:9pt 0;border-bottom:1px solid #eef0f2;color:#535e65">Bereichsleitung</td></tr>
+<tr><td style="padding:9pt 8pt 9pt 0;border-bottom:1px solid #eef0f2;font-weight:600">Technischer Betrieb</td><td style="padding:9pt 8pt 9pt 0;border-bottom:1px solid #eef0f2;color:#535e65">Verfügbarkeit, Monitoring, Nachtraining</td><td style="padding:9pt 0;border-bottom:1px solid #eef0f2;color:#535e65">Plattform-Team</td></tr>
+<tr><td style="padding:9pt 8pt 9pt 0;border-bottom:1px solid #eef0f2;font-weight:600">Datenqualität</td><td style="padding:9pt 8pt 9pt 0;border-bottom:1px solid #eef0f2;color:#535e65">Quellen, Definitionen, Korrekturen</td><td style="padding:9pt 0;border-bottom:1px solid #eef0f2;color:#535e65">Data Owner im Fachbereich</td></tr>
+<tr><td style="padding:9pt 8pt 9pt 0;border-bottom:1px solid #eef0f2;font-weight:600">Freigabe</td><td style="padding:9pt 8pt 9pt 0;border-bottom:1px solid #eef0f2;color:#535e65">Inbetriebnahme und Risikoklasse</td><td style="padding:9pt 0;border-bottom:1px solid #eef0f2;color:#535e65">Geschäftsführung, Recht</td></tr>
+</tbody></table>
+<h2 style="font-family:'Oswald',sans-serif;font-weight:500;font-size:19pt;line-height:1.1;text-transform:uppercase;letter-spacing:-.005em;margin:26pt 0 10pt;color:#06202d">Was das für Ihr nächstes Vorhaben heißt</h2>
+<p style="margin:0 0 10pt">Klären Sie die vier Rollen, bevor Sie über Modelle sprechen. Die Frage „Wer betreibt das in zwei Jahren?“ beantwortet mehr über die Erfolgsaussicht als jede Machbarkeitsstudie. Fällt die Antwort schwer, ist der Anwendungsfall vermutlich noch nicht der richtige.</p>
+<div style="background:#f5ede1;border-radius:6px;padding:16pt 18pt;margin:24pt 0 0;break-inside:avoid">
+<div style="font-family:'IBM Plex Mono',monospace;font-size:8pt;letter-spacing:.14em;text-transform:uppercase;color:#007d95;margin-bottom:8pt">Über diese Auswertung</div>
+<p style="margin:0;font-size:9.5pt;color:#535e65">34 Vorhaben aus 19 Organisationen, 12 bis 4.800 Mitarbeitende, Beginn zwischen Januar 2023 und Juni 2025. Erhebung über strukturierte Interviews mit Projekt- und Fachverantwortlichen. Anonymisiert; die Rohdaten liegen beim AI Transformation Collective.</p>
+</div>
+</div>
+</doc-page>
+</x-dc>
+</body>
+</html>

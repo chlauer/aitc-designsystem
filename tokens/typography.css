@@ -1,0 +1,24 @@
+:root{
+--font-display:"Oswald","Archivo Narrow","Arial Narrow",sans-serif;
+--font-sans:"Archivo","Helvetica Neue",Arial,sans-serif;
+--font-mono:"IBM Plex Mono",ui-monospace,monospace;
+--font-body:var(--font-sans);
+--font-heading:var(--font-display);
+
+--weight-light:300;--weight-regular:400;--weight-medium:500;--weight-semibold:600;--weight-bold:700;
+
+/* Display scale — condensed, uppercase, tight. Steps are ratio ~1.28 */
+--text-display-1:clamp(3.5rem,7vw,6.5rem);
+--text-display-2:clamp(2.75rem,5vw,4.75rem);
+--text-display-3:clamp(2.25rem,3.6vw,3.5rem);
+--text-h1:2.5rem;--text-h2:2rem;--text-h3:1.5rem;--text-h4:1.25rem;
+--text-lead:1.25rem;--text-body:1.0625rem;--text-body-sm:0.9375rem;
+--text-caption:0.8125rem;--text-label:0.75rem;
+
+--leading-display:0.92;--leading-tight:1.1;--leading-snug:1.3;--leading-body:1.6;--leading-loose:1.75;
+
+--tracking-display:-0.015em;--tracking-tight:-0.01em;--tracking-normal:0;
+--tracking-wide:0.04em;--tracking-label:0.14em;--tracking-logo:0.2em;
+
+--measure-narrow:34ch;--measure-body:66ch;--measure-wide:80ch;
+}

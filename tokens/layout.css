@@ -1,0 +1,10 @@
+:root{
+--container-max:1240px; /* @kind spacing */
+--container-narrow:760px; /* @kind spacing */
+--container-wide:1440px; /* @kind spacing */
+--gutter:clamp(1.25rem,4vw,3rem); /* @kind spacing */
+--grid-columns:12; /* @kind other */
+--grid-gap:var(--space-6); /* @kind spacing */
+--section-y:clamp(4rem,8vw,7.5rem); /* @kind spacing */
+--header-height:72px; /* @kind spacing */
+}

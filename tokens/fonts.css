@@ -1,0 +1,5 @@
+/* AITC webfonts. SUBSTITUTION: no licensed brand fonts were supplied.
+   Oswald stands in for the condensed grotesque in the logo wordmark.
+   Archivo is the neutral text grotesque. IBM Plex Mono carries data/eyebrow labels.
+   Replace these @import lines with self-hosted @font-face rules once licensed files exist. */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap");
