@@ -1,0 +1,45 @@
+.aitc-field{display:flex;flex-direction:column;gap:var(--space-2)}
+.aitc-field__label{font-family:var(--font-mono);font-size:var(--text-label);letter-spacing:var(--tracking-label);text-transform:uppercase;color:var(--text-2)}
+.aitc-field__req{color:var(--danger);margin-left:2px}
+.aitc-field__hint{font-size:var(--text-caption);color:var(--text-3)}
+.aitc-field__error{font-size:var(--text-caption);color:var(--danger)}
+.aitc-input,.aitc-textarea,.aitc-select{width:100%;font-family:var(--font-sans);font-size:var(--text-body-sm);color:var(--text-1);background:var(--surface-card);border:var(--border-width) solid var(--border-2);border-radius:var(--radius-sm);padding:0 var(--space-3);height:44px;transition:var(--transition-control)}
+.aitc-textarea{height:auto;min-height:110px;padding:var(--space-3);line-height:var(--leading-body);resize:vertical}
+.aitc-input::placeholder,.aitc-textarea::placeholder{color:var(--text-3)}
+.aitc-input:hover,.aitc-textarea:hover,.aitc-select:hover{border-color:var(--gray-400)}
+.aitc-input:focus,.aitc-textarea:focus,.aitc-select:focus{outline:0;border-color:var(--border-brand);box-shadow:var(--shadow-focus)}
+.aitc-input[aria-invalid="true"],.aitc-textarea[aria-invalid="true"],.aitc-select[aria-invalid="true"]{border-color:var(--danger)}
+.aitc-input[disabled],.aitc-textarea[disabled],.aitc-select[disabled]{background:var(--surface-sunken);color:var(--text-3);cursor:not-allowed}
+.aitc-input--sm{height:34px;font-size:var(--text-caption)}
+.aitc-select{appearance:none;padding-right:var(--space-8);background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 18px) 20px,calc(100% - 13px) 20px;background-size:5px 5px,5px 5px;background-repeat:no-repeat}
+.aitc-inputwrap{position:relative;display:flex;align-items:center}
+.aitc-inputwrap__affix{position:absolute;display:inline-flex;color:var(--text-3);pointer-events:none}
+.aitc-inputwrap__affix svg{width:18px;height:18px}
+.aitc-inputwrap__affix--start{left:var(--space-3)}
+.aitc-inputwrap__affix--end{right:var(--space-3)}
+.aitc-input--has-start{padding-left:calc(var(--space-3) * 2 + 18px)}
+.aitc-input--has-end{padding-right:calc(var(--space-3) * 2 + 18px)}
+
+.aitc-choice{display:inline-flex;align-items:flex-start;gap:var(--space-3);cursor:pointer;font-size:var(--text-body-sm);color:var(--text-1)}
+.aitc-choice[data-disabled="true"]{opacity:.45;cursor:not-allowed}
+.aitc-choice__box{flex:0 0 auto;width:20px;height:20px;margin-top:1px;display:grid;place-items:center;border:var(--border-width-thick) solid var(--border-2);border-radius:var(--radius-xs);background:var(--surface-card);transition:var(--transition-control)}
+.aitc-choice__box--radio{border-radius:var(--radius-full)}
+.aitc-choice:hover .aitc-choice__box{border-color:var(--gray-400)}
+.aitc-choice input{position:absolute;opacity:0;width:0;height:0}
+.aitc-choice input:checked+.aitc-choice__box{background:var(--surface-brand);border-color:var(--surface-brand)}
+.aitc-choice input:focus-visible+.aitc-choice__box{box-shadow:var(--shadow-focus)}
+.aitc-choice__mark{width:11px;height:11px;color:#fff;opacity:0}
+.aitc-choice input:checked+.aitc-choice__box .aitc-choice__mark{opacity:1}
+.aitc-choice__dot{width:8px;height:8px;border-radius:50%;background:#fff;transform:scale(0);transition:transform var(--dur-fast) var(--ease-out)}
+.aitc-choice input:checked+.aitc-choice__box .aitc-choice__dot{transform:scale(1)}
+.aitc-choice__text{display:flex;flex-direction:column;gap:2px}
+.aitc-choice__desc{font-size:var(--text-caption);color:var(--text-3)}
+
+.aitc-switch{display:inline-flex;align-items:center;gap:var(--space-3);cursor:pointer;font-size:var(--text-body-sm);white-space:nowrap}
+.aitc-switch[data-disabled="true"]{opacity:.45;cursor:not-allowed}
+.aitc-switch input{position:absolute;opacity:0;width:0;height:0}
+.aitc-switch__track{position:relative;flex:0 0 auto;width:44px;height:24px;border-radius:var(--radius-pill);background:var(--gray-300);transition:background-color var(--dur-base) var(--ease-out)}
+.aitc-switch__knob{position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;box-shadow:var(--shadow-1);transition:transform var(--dur-base) var(--ease-out)}
+.aitc-switch input:checked+.aitc-switch__track{background:var(--surface-brand)}
+.aitc-switch input:checked+.aitc-switch__track .aitc-switch__knob{transform:translateX(20px)}
+.aitc-switch input:focus-visible+.aitc-switch__track{box-shadow:var(--shadow-focus)}

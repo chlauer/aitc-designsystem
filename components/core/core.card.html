@@ -1,0 +1,44 @@
+<!-- @dsCard group="Components" viewport="700x330" name="Core — Button, IconButton, Badge, Tag, Card" subtitle="Aktionen, Labels und Flächen" -->
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/lucide@0.474.0/dist/umd/lucide.js"></script>
+<script src="../../assets/icons/aitc-icons.js"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:22px;background:var(--surface-page)}.g{display:flex;flex-wrap:wrap;gap:14px;align-items:center}.col{display:flex;flex-direction:column;gap:14px}.lb{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3)}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const NS=window.AITransformationCollectiveDesignSystem_5cdd67||{};const Icon=window.AITCIcon;
+const {Button,IconButton,Badge,Tag,Card:Surface}=NS;
+function Card(){return <div className="col">
+<div className="g">
+  <Button iconEnd={<Icon name="ArrowRight" size={16}/>}>Gespräch vereinbaren</Button>
+  <Button variant="secondary">Programm ansehen</Button>
+  <Button variant="ghost" size="sm">Alle Themenfelder</Button>
+  <Button variant="danger" size="sm">Löschen</Button>
+  <Button disabled>Deaktiviert</Button>
+</div>
+<div className="g">
+  <Button size="lg">Large 54</Button><Button size="md">Medium 44</Button><Button size="sm">Small 34</Button>
+  <span style={{width:1,height:32,background:"var(--border-1)"}}/>
+  <IconButton label="Suchen" icon={<Icon name="Search"/>}/>
+  <IconButton label="Filter" variant="outline" icon={<Icon name="SlidersHorizontal"/>}/>
+  <IconButton label="Senden" variant="solid" icon={<Icon name="Send"/>}/>
+  <IconButton label="Mehr" size="sm" icon={<Icon name="MoreHorizontal" size={16}/>}/>
+</div>
+<div className="g">
+  <Badge tone="brand">Whitepaper</Badge><Badge tone="solid">Neu</Badge><Badge tone="sand">Impuls</Badge>
+  <Badge tone="success">Live</Badge><Badge tone="warning">In Arbeit</Badge><Badge tone="danger">Abgesagt</Badge>
+  <Badge outline>12 Min</Badge>
+  <span style={{width:1,height:24,background:"var(--border-1)"}}/>
+  <Tag>Datenstrategie</Tag><Tag onClick={()=>{}}>MLOps</Tag><Tag selected onClick={()=>{}}>Governance</Tag><Tag onRemove={()=>{}}>Change</Tag>
+</div>
+<div className="g" style={{alignItems:"stretch"}}>
+  <Surface rule style={{flex:1}}><strong>default</strong><span style={{fontSize:13,color:"var(--text-2)"}}>Haarlinie, 6px Radius</span></Surface>
+  <Surface variant="sand" style={{flex:1}}><strong>sand</strong></Surface>
+  <Surface variant="ink" style={{flex:1}}><strong>ink</strong></Surface>
+  <Surface variant="brand" style={{flex:1}}><strong>brand</strong></Surface>
+</div>
+</div>;}
+ReactDOM.createRoot(document.getElementById("root")).render(<Card/>);
+</script></body></html>

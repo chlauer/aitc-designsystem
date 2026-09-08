@@ -1,0 +1,49 @@
+<!-- @dsCard group="Components" viewport="700x760" name="Brand — Heading, Stat, Quote, ExpertCard, TopicTile, Testimonial, Lockup, Motif" subtitle="Die markenspezifischen Bausteine" -->
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/lucide@0.474.0/dist/umd/lucide.js"></script>
+<script src="../../assets/icons/aitc-icons.js"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{margin:0;padding:22px;background:var(--surface-page)}.g{display:flex;flex-wrap:wrap;gap:14px;align-items:center}.col{display:flex;flex-direction:column;gap:14px}.lb{font-family:var(--font-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3)}</style></head><body><div id="root"></div>
+<script type="text/babel">
+const NS=window.AITransformationCollectiveDesignSystem_5cdd67||{};const Icon=window.AITCIcon;
+const {SectionHeading,StatFigure,PullQuote,ExpertCard,TopicTile,TestimonialCard,LogoLockup,DotMotif,Eyebrow}=NS;
+function Card(){return <div className="col" style={{gap:30}}>
+  <SectionHeading eyebrow="Das Netzwerk" title="Expertise, die zusammenarbeitet"
+    lead="Vierzig Köpfe, ein Zugang: Sie sprechen mit einer Ansprechperson, arbeiten mit dem Team, das zur Frage passt."/>
+  <div style={{display:"flex",gap:28}}>
+    <StatFigure ruled value="40" unit="+" label="Expert:innen im Netzwerk"/>
+    <StatFigure ruled value="6" unit="Wo." label="Vom Assessment zur Roadmap"/>
+    <StatFigure ruled value="3" label="Köpfe pro Projektteam"/>
+  </div>
+  <div style={{position:"relative",overflow:"hidden",background:"var(--surface-ink)",padding:"40px 32px"}}>
+    <DotMotif tone="white" size={340} opacity={.32} position="right" assetBase="../../assets"/>
+    <div style={{position:"relative"}}>
+      <PullQuote tone="invert" quote="KI-Transformation ist eine Organisationsfrage, keine Technologiefrage."
+        author="Dr. Anna Weiß" role="Sprecherin des Kollektivs"/>
+    </div>
+  </div>
+  <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:14}}>
+    <TopicTile index="01" title="Strategie & Roadmap" icon={<Icon name="Compass" size={28}/>} description="Vom Reifegrad zur priorisierten Roadmap." href="#"/>
+    <TopicTile index="02" title="Daten & Plattform" icon={<Icon name="Database" size={28}/>} description="Fundament, das Anwendungsfälle trägt." variant="sand" href="#"/>
+    <TopicTile index="03" title="Befähigung" icon={<Icon name="Users" size={28}/>} description="Teams, die selbst weiterarbeiten." variant="ink" href="#"/>
+  </div>
+  <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:14}}>
+    <ExpertCard name="Anna Weiß" role="Datenstrategie" bio="Begleitet Konzerne beim Aufbau von Datenplattformen." tags={["Data Mesh","Governance"]}/>
+    <ExpertCard name="Jonas Feld" role="Change & Befähigung" bio="Bringt Fachbereiche vom Pilot in den Betrieb." tags={["Enablement"]}/>
+    <TestimonialCard quote="Nach acht Wochen hatten wir eine Roadmap, die intern getragen wird."
+      author="Markus Lindner" role="CDO" company="Nordwerk AG"/>
+  </div>
+  <div className="g" style={{gap:32}}>
+    <LogoLockup size={44} showWordmark assetBase="../../assets"/>
+    <LogoLockup size={36} assetBase="../../assets"/>
+    <span style={{display:"flex",alignItems:"center",gap:16,background:"var(--surface-brand)",padding:"12px 18px"}}>
+      <LogoLockup tone="white" size={36} showWordmark assetBase="../../assets"/>
+      <Eyebrow tone="invert">Auf Teal</Eyebrow>
+    </span>
+  </div>
+</div>;}
+ReactDOM.createRoot(document.getElementById("root")).render(<Card/>);
+</script></body></html>
